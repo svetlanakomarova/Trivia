@@ -1,0 +1,105 @@
+/*
+    name: Svetlana Komarova
+    assignment: Assignment 1
+    February 5, 2021
+
+    This program presents:
+    the user with trivia “question cards” one at a time, 
+    along with a list of options(answers) to choose from.
+*/
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #ebf1fa;
+}
+
+form  {
+    box-shadow: 2px 2px 2px #999;
+    margin: 5px;
+    padding: 5px;
+}
+
+h1.header {
+    margin-left: 20px;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+#quiz {
+    margin-left: 20px;
+    background: #d2def2;
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#button {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+
+#button:hover {
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+}
+
+#button1 {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transition-duration: .5s;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#button1:hover {
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+}
+
+#after_submit {
+    display: none;
+    background: #ff5459;
+    box-shadow: 2px 2px 2px #999;
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 30px;  
+}
+
+#q1 {
+    display: block;
+}
+
+#q2 {
+    display: none;
+}
+
+#q3 {
+    display: none;
+}

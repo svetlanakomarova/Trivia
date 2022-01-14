@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+name: Svetlana Komarova
+assignment: Assignment 1
+February 5, 2021
+
+This program presents:
+the user with trivia “question cards” one at a time, 
+along with a list of options(answers) to choose from. 
+-->
+<html lang="en">
+  <head>
+
+    <title>Trivia Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet"> 
+    <script src="js/main.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header">Trivia Game</h1>
+    </header>
+
+    <!-- trivia game form to hold the quiz -->
+    <form id="quiz" name="quiz" autocomplete="off">
+
+      <!-- question #1 -->
+      <div id ="q1">
+        <p class="thick">Which ocean surrounds the Maldives?</p>
+        <input type = "radio" id = "mc1" name = "question1" value = "Pacific"> Pacific Ocean<br>
+        <input type = "radio" id = "mc2" name = "question1" value = "Indian"> Indian Ocean<br>
+        <input type = "radio" id = "mc3" name = "question1" value = "Atlantic"> Atlantic Ocean<br>
+        <input type = "radio" id = "mc4" name = "question1" value = "Arctic"> Arctic Ocean<br>
+      </div>
+
+      <!-- question #2 -->
+      <div id ="q2">
+        <p class="thick">Which sea creature has three hearts?</p>
+        <input type = "radio" id = "mc5" name = "question2" value = "Turtle"> Turtle<br>
+        <input type = "radio" id = "mc6" name = "question2" value = "Shark"> Shark<br>
+        <input type = "radio" id = "mc7" name = "question2" value = "Lobster"> Lobster<br>
+        <input type = "radio" id = "mc8" name = "question2" value = "Octopus"> Octopus<br>
+      </div>
+
+      <!-- question #3 -->
+      <div id ="q3">
+        <p class="thick">What is the Italian word for "pie"?</p>
+        <input type = "radio" id = "mc9" name = "question3" value = "Pizza"> Pizza<br>
+        <input type = "radio" id = "mc10" name = "question3" value = "Cake"> Cake<br>
+        <input type = "radio" id = "mc11" name = "question3" value = "Bread"> Bread<br>
+        <input type = "radio" id = "mc12" name = "question3" value = "Tart"> Tart<br>
+      </div>
+
+      <!-- to submit the quiz -->
+      <input type = "button" id = "button" value = "Next question" onclick = "check();">
+    
+      <input type = "button" id = "button1" value = "Help" onclick = "help();">
+
+    </form>
+
+    <!-- to display the result -->
+    <div id = "after_submit">
+      <p id ="message"></p>
+      <p id = "number_correct"></p>
+    </div>
+
+  </body>
+</html>
